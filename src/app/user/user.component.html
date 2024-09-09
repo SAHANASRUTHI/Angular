@@ -1,0 +1,22 @@
+<p>user works!</p>
+<table class="table custom-table">
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>User Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Role</th>
+      </tr>
+    </thead>
+    <!-- tbody -->
+    <tbody>
+      <tr  *ngFor="let user of users">
+        <td >{{ user.userid }}</td>
+        <td>{{ user.uname }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.upassword }}</td>
+        <td>{{ user.urole }}</td>
+      </tr>
+      </tbody>
+      </table>
